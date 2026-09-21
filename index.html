@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="weather-app">
+
+        <h1>🌤️ Weather App</h1>
+        <p class="subtitle">Check the current weather anywhere</p>
+
+        <div class="search-box">
+            <input
+                type="text"
+                id="locationInput"
+                placeholder="Enter city name..."
+            >
+
+            <button id="searchBtn">
+                Search
+            </button>
+        </div>
+
+        <p id="errorMessage"></p>
+
+        <div class="weather-card" id="weatherCard">
+
+            <div class="location">
+                <h2 id="city">London</h2>
+                <p id="country">United Kingdom</p>
+            </div>
+
+            <img
+                id="weatherIcon"
+                src=""
+                alt="Weather Icon"
+            >
+
+            <div class="temperature">
+                <span id="temperature">--</span>°C
+            </div>
+
+            <h3 id="condition">Weather Condition</h3>
+
+            <div class="weather-details">
+
+                <div class="detail">
+                    <span>🌡️</span>
+                    <p>Feels Like</p>
+                    <strong id="feelsLike">--°C</strong>
+                </div>
+
+                <div class="detail">
+                    <span>💧</span>
+                    <p>Humidity</p>
+                    <strong id="humidity">--%</strong>
+                </div>
+
+                <div class="detail">
+                    <span>💨</span>
+                    <p>Wind</p>
+                    <strong id="wind">-- km/h</strong>
+                </div>
+
+                <div class="detail">
+                    <span>☀️</span>
+                    <p>UV Index</p>
+                    <strong id="uv">--</strong>
+                </div>
+
+            </div>
+
+            <p class="updated">
+                Last updated: <span id="updated">--</span>
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>git init
+
